@@ -1,66 +1,38 @@
-Sometimes you want to make a complete copy of some object.
+<div align="center">
 
-Something like this:
+![koda-readme](https://github.com/XCode-NLP/Koda-images/blob/3c784e5c3c8ae259ddb13500508cfdd8218d5dfc/koda-readme.png)
 
-```java
-ComplexObject obj = ...
-ComplexObject copy = CopyUtils.deepCopy(obj);
-```
+</div>
 
-The problem is that classes in Java can be of arbitrary complexity - the number of class fields and their types are not regulated in any way.
-Moreover, the type system in Java is closed - elements of an array/list can be absolutely any data types, including arrays and lists.
-And also there are recursive data structures - when an object somewhere in its depths contains a reference to itself (or to a part of itself).
+<h1 align="center">Koda (Continue)</h1>
 
-You need to write a deepCopy() method that takes all these nuances into account and works on objects of arbitrary structure and size.
+<div align="center">
 
-Some details:
-- If you have any questions, feel free to write to join-ecom@lightspeedhq.com.
-- First of all, the method should work correctly. Speed is also important, but not as much as correctness
-- You can only use the features of the standard J2SE library
-- Code should be written in Java (version 21 and above) or Kotlin.
-- The assignment must have a working main() method, to demonstrate how it works
-- The completed assignment should be posted on GitHub
+**[Koda](https://kodacode.ru) делает программирование более доступным с плагином для [VS Code](https://marketplace.visualstudio.com/manage/publishers/koda/extensions/koda)**
 
-P.S. I know about hacks with `java.io.Serializable` and `java.lang.Cloneable`, please don't use them
+</div>
 
----
-Before submitting, I recommend testing the solution on a class like this:
-```java
-class Man {
-	private String name;
-	private int age;
-	private List<String> favoriteBooks;
+<div align="center">
 
-	public Man(String name, int age, List<String> favoriteBooks) {
-		this.name = name;
-		this.age = age;
-		this.favoriteBooks = favoriteBooks;
-	}
+<a target="_blank" href="https://opensource.org/licenses/Apache-2.0" style="background:none">
+    <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" style="height: 22px;" />
+</a>
 
-	public String getName() {
-		return name;
-	}
+<p></p>
 
-	public void setName(String name) {
-		this.name = name;
-	}
+## KodaChat
 
-	public int getAge() {
-		return age;
-	}
+**Интеллектуальный ассистент,** который помогает решать задачи программирования
 
-	public void setAge(int age) {
-		this.age = age;
-	}
+![kodachat](https://github.com/XCode-NLP/Koda-images/blob/3c784e5c3c8ae259ddb13500508cfdd8218d5dfc/koda-chat-demo.gif)
 
-	public List<String> getFavoriteBooks() {
-		return favoriteBooks;
-	}
+## KodaCompletion
+**Умное автодополнение и анализ кода**
 
-	public void setFavoriteBooks(List<String> favoriteBooks) {
-		this.favoriteBooks = favoriteBooks;
-	}
-	
-}
-```
+![kodacompletion](https://github.com/XCode-NLP/Koda-images/blob/3c784e5c3c8ae259ddb13500508cfdd8218d5dfc/koda-completion-demo.gif)
 
+## KodaRetrival
+**Семантический поиск по коду и документации**
+
+![kodaretrival](https://github.com/XCode-NLP/Koda-images/blob/3c784e5c3c8ae259ddb13500508cfdd8218d5dfc/koda-retrieval-demo.gif)
+</div>
